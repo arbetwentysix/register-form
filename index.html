@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="shortcut icon" href="assets/Google__G__logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* CSS Reset */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .sub-title {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 16px;
+        color: rgb(139, 139, 139);
+      }
+
+      .sign-up {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(29, 29, 29);
+        border: 1.5px solid rgb(217, 217, 217);
+        border-radius: 5px;
+        padding: 6px 10px;
+        margin-bottom: 20px;
+      }
+
+      .sign-up > span > img {
+        width: 20px;
+        margin-right: 5px;
+        vertical-align: -5px;
+      }
+
+      form {
+        width: 280px;
+      }
+
+      .input {
+        margin-bottom: 10px;
+      }
+
+      .input label {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .input input {
+        width: 100%;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: rgb(68, 68, 230);
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form name="registration" action="" method="get">
+        <h1 class="title">Your details</h1>
+        <p class="sub-title">Please provide your name and email</p>
+
+        <a href="#" class="sign-up" target="_self" title="Sign up with google">
+          <span><img src="assets/Google__G__logo.png" alt="google logo" /></span>
+          Sign up with Google
+        </a>
+
+        <div class="input">
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" />
+        </div>
+
+        <div class="input">
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" />
+        </div>
+
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <button type="submit">Continue</button>
+      </form>
+    </main>
+  </body>
+</html>
